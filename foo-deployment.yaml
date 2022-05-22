@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: foo
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      run: foo
+  template:
+    metadata:
+      labels:
+        run: foo
+    spec:
+      containers:
+      - image: asia-southeast1-docker.pkg.dev/johncollins/johncollins/foo:v0.1.0
+        imagePullPolicy: IfNotPresent
+        name: foo
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+
+
+
+

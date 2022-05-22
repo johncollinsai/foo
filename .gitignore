@@ -1,0 +1,14 @@
+# data and .csv files - please contact john.collins@edhec.com re source data
+*.csv
+*.xls*
+data/
+
+# jupyter checkpoints
+.ipynb_checkpoints/
+
+# working files, which I generally name 'rem'
+rem.*
+
+# environment variables
+.env
+
